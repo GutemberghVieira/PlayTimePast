@@ -1,0 +1,721 @@
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Protest+Revolution&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+ *{
+padding:0;
+margin:0;
+font-family:"raleway";
+box-sizing:border-box;
+text-decoration:none;
+}
+
+html
+{
+scroll-behavior:smooth;
+}
+
+:root{
+--background-play:#360000;
+--background-rub:#750000;
+--background-red:#B50000;
+--Hexa-Background-Black:#4a4a4a;
+
+--color-text:#fff;
+}
+
+body{
+width:100%;
+height:100%;
+}
+
+.principal-content-playtime{
+width:100%;
+height:100vh;
+background-color:black;
+z-index:1;
+position:relative;
+}
+
+.section-Play-time-3{
+width:100%;
+background-repeat:no-repeat;
+background-size:cover;
+background-attachment:fixed;
+height:100%;  
+display:flex;
+position:relative;
+align-items:center;
+justify-content:center;
+margin:0 auto;
+}
+
+.section-Play-time-3 
+video 
+{
+width:100%;
+object-fit:cover;
+position:absolute;
+z-index:-2;
+height:100vh;
+}
+
+.section-Play-time-3::before
+{
+content:"";
+position:absolute;
+background:#000;
+top:0;
+left:0;
+width:100%;
+height:100%;    
+z-index:-1;
+opacity:50%;
+}
+
+.List-PlayTime
+{
+width:100%;
+text-align:left;    
+}
+
+.List-PlayTime 
+.List
+{
+list-style:none;
+}
+
+.List-PlayTime 
+.List
+.List-item 
+{
+color:#fff;
+text-decoration:none;    
+position:relative;
+padding:10px;
+z-index:1;
+display:flex;
+align-items:center;
+margin:5px 0;
+width:200px;
+}
+
+.List-PlayTime 
+.List 
+.List-item::before 
+{
+content:"";
+position:absolute;
+height:100%;
+width:2px;    
+left:0;
+background:#fff;
+z-index:-1;
+}
+
+.List-PlayTime 
+.List 
+.List-item:hover {
+color:#111;
+z-index:1;
+transition:.2s ease-in
+}
+
+.List-PlayTime 
+.List 
+.List-item:hover::before 
+{
+background:#fff;
+width:100%;
+transition:.2s ease-in;
+}
+
+.Container-Article
+{
+max-width:calc((40% + 300px) - 30px);
+width:100%;
+display:flex;
+align-items:center;
+flex-direction:column;
+}
+
+.Container-Article 
+.heading-style, 
+.Container-Article
+.paragraph-style 
+{
+font-style:italic;    
+}
+
+.Container-Article 
+.left-text
+{
+text-align:left;    
+}
+
+.Container-Article 
+.heading-style 
+{
+color:#fff;
+font-size:23px;    
+}
+
+.paragraph-style 
+{
+color:#fff;
+font-size:15px;
+}
+
+button{
+padding:10px 0;
+width:300px;
+border:none;
+cursor:pointer;
+background:linear-gradient(76deg, #000 ,#111);
+box-shadow:2px 3px 4px #000;
+position:relative;
+}
+
+button::before{
+content:"";
+height:100%;
+width:0;
+position:absolute;
+top:0;
+left:0;
+z-index:1;
+}
+
+button:hover::before
+{
+background:linear-gradient(65deg, #6d0404, red);
+width:100%;
+transition:.2s ease-in;
+border:2px solid #000;
+}
+
+.line::before{
+content:"";
+position:absolute;
+width:30px;
+height:2px;
+z-index:2;
+left:10%;
+top:0;
+background:#000;
+}
+
+.line:hover::before 
+{
+background:#fff;
+transition:.2s ease-in;    
+}
+
+.line::after
+{
+content:"";
+position:absolute;
+width:30px;
+height:3px;
+right:10%;
+top:0;
+background:#111;
+z-index:2;
+}
+
+button:hover .line::before 
+{
+background:#6d0404;    
+transition:.2s ease-in;
+}
+
+button:hover .line::after 
+{
+background:red;
+transition:.2s ease-in;
+}
+
+button a
+{
+color:var(--color-text);
+text-decoration:none;
+font-size:21px;
+}
+
+button:hover a 
+{
+font-family:protest revolution;
+z-index:2;
+color:#000;
+position:relative;
+}
+
+.Section-Persons
+{
+width:100%;
+height:100%;    
+color:#fff;
+background:#0c0c0c;
+}
+
+.Time-3{
+width:50%;
+height:60%;
+margin:0 10px;
+}
+
+p{
+margin:10px 0;
+line-height:20px;
+}
+
+.play-heading-3{
+font-size:14px;
+}
+
+.text-cat-nap{
+font-size:13px;
+}
+
+.Container-Time{
+width:100%;
+display:flex;
+flex-direction:column;
+}
+
+.Division{
+width:50%;    
+}
+
+.List-of-smilling-critters{
+display:flex;
+flex-wrap:wrap;
+flex-direction:column;
+width:32%;
+padding:5px;
+}
+
+.List-of-smilling-critters li{
+list-style:none;
+width:100%;
+}
+
+.List-of-smilling-critters li a{
+font-size:12px;
+margin:5px 0;
+}
+
+.Article-Smilling-Critters{
+background: #070101;
+}
+
+.Container-Smilling-critters{
+width:100%;
+display:flex;
+justify-content:center;
+max-width:1024px;
+margin:0 auto;
+flex-wrap:wrap;
+padding: 27px;
+border-radius:10px;
+}
+
+figure{
+background:#000;
+margin:15px;
+border-radius:10px;
+box-shadow: 0 0 10px 4px #410000;
+padding:35px 0;
+text-align:center;
+} 
+
+img{
+width:250px;
+}
+
+figcaption{
+color:#F8F1AF;
+margin:20px 0;
+font-weight:bold;
+text-align:center;
+}
+
+h2{
+padding:10px;
+color:red
+}
+
+.History-Poppy-Time{
+padding:20px 25px;
+}
+
+.diferent-part{
+background-color:#000;
+width:100%;
+padding:25px 0;
+}
+
+.diferent-part h3{
+margin:10px;
+font-size:20px;   
+}
+
+.diferent-part h3, 
+.diferent-part p{
+padding:10px;
+}
+
+.diferent p{
+font-weight:bold;
+}
+
+.color-white{
+color:#fff;
+text-align:center;
+}
+
+.Figure-unic{
+box-shadow:0 0 0 0;
+background:transparent;
+width:80%;
+margin:0 auto;
+}
+
+.img-Company{
+width:100%;
+}
+
+span{
+color:#ff5500;
+font-weight:bold;
+font-style:italic;
+}
+
+.Wicked{
+border:6px solid #4b0202;
+border-radius:10px;
+padding:5px;
+margin:24px 0;
+width:100%;
+position:relative;
+}
+
+.Wicked h3{
+position:absolute;
+top:-23px;
+background:#4b0202;
+padding:8px;
+border-radius:10px 0;
+}
+
+.Wicked p{
+margin:15px 0;
+}
+
+.color-huggy{
+color:#00f;
+}
+
+.color-mommy{
+color:#EF418D;
+}
+
+.color-Cat{
+color:#A760E4;
+}
+ 
+.img-Company-experiment{
+width:80%;
+}
+
+p{
+margin:10px;
+line-height:20px;
+} 
+
+.Width-unic{
+width:100%;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.Bubba{
+background:#78EDFE;
+box-shadow:0 0 4px 3px #3AA0E0;
+}
+
+.Bubba:hover{
+box-shadow:0 0 8px 7px #3AA0E0;
+}
+
+.Bob{
+background:#CD0B1D;    
+box-shadow:0 0 4px 3px  #F88D94;
+}
+
+.Bob:hover{
+box-shadow: 0 0 8px 7px #F88D94;
+}
+
+.Craft{
+background: #fff;
+box-shadow:0 0 4px 3px #8EF9EC ;
+}
+
+.Kickin{
+background:#fdee48;
+box-shadow:0 0 4px 3px #F8923D;
+}
+
+.Hoppy{
+background:#A8FA6D;
+box-shadow:0 0 4px 3px #52D137;
+}
+
+.Picky{
+background-color:#F993D7;
+box-shadow:0 0 4px 3px #E33B98;   
+}
+
+.Dog{
+background-color:#F8923D;
+box-shadow:0 0 4px 3px #E0431C;
+}
+
+.Cat{
+background-color:#A460E7;
+box-shadow:0 0 4px 3px #4D2E8C;
+}
+
+.Craft:hover{
+box-shadow:0 0 8px 7px #8EF9EC;    
+}
+
+.Kickin:hover{
+box-shadow:0 0 8px 7px #F8923D;
+}
+
+.Hoppy:hover{
+box-shadow:0 0 8px 7px #52D137;    
+}
+
+.Picky:hover{
+box-shadow:0 0 8px 7px #E33B98;
+}
+
+.Dog:hover{
+box-shadow:0 0 8px 7px #E0431C;
+}
+
+.Cat:hover{
+box-shadow:0 0 8px 7px #4D2E8C;
+}
+
+.Phant, 
+.BearHug, 
+.Corn, 
+.Chicken,
+.HopsCotch,
+.Pig,
+.Day,
+.Nap{
+color:#111;
+}
+
+.BubbaBubbaphant{
+color:#3AA0E0;
+}
+
+.BobBearhug{
+color:#CD0B1D;
+}
+
+.CraftCorn{
+color:#8EF9EC;
+}
+
+.KickinChcken{
+color:#FDEE48;
+}
+
+.HoppyHopsCotch{
+color:#52D137;
+}
+
+.PickyPig{
+color:#E33B98;
+}
+
+.CatNap{
+color:#502E8C;
+}
+
+.Entrada-Flexível
+{
+display:flex;    
+}
+
+.Container-Vilão 
+.center-content 
+{
+margin:10px auto;
+max-width:1024px; 
+width:100%;
+}
+
+.Container-Vilão .center-content p
+{
+color:#fff;
+line-height:24px;
+}
+
+.Container-Vilão img
+{
+width:100%;
+}
+
+.color-Black
+{
+color:#000;
+background-color:#fff;
+}
+
+.Article-Smilling-Critters p
+{
+color:#fff;
+}
+
+.Article-Smilling-Critters .Preenchimento-solo
+{
+width:80%;
+margin:0 auto;
+padding:10px;
+}
+
+.container img
+{
+margin:10px auto;
+width:30%;
+display:block
+}
+
+.container .cone-crew
+{
+width:50%;
+margin:0 auto;
+}
+
+.container  
+iframe
+{
+padding:10px; 
+}
+
+
+.Container-flex-row
+{
+display:flex;
+justify-content:space-between;
+flex-direction:column;
+align-items:center;
+}
+
+.Containre-flex-row 
+.Container-heading-and-iframe
+{
+width:100%;    
+}
+
+.margin-zero
+{
+margin:0;    
+}
+
+.style-heading 
+{
+color:#fff;
+font-size:22px;
+font-style:italic;
+}
+
+.img-container
+{
+width:45px;
+margin:0;   
+padding:0; 
+}
+
+.Sidewinder,
+.text-center
+{
+text-align:center;
+}
+
+.Historys
+{
+padding:10px;
+}
+
+.Frame-max-width
+{
+width:100%;
+max-width:1024px;
+}
+
+.Anchor-style{
+color:orangered;
+font-size:17px;
+}
+
+.Container-Vilão
+{
+width:100%;
+background:#0a0000;  
+margin:0 auto;
+padding:10px;  
+}
+
+.unorded-list 
+li
+{
+padding:5px 10px;
+list-style:disc;
+}
+
+.unorded-list 
+li 
+a
+{
+color:#7a1111;
+font-italic;
+}
+
+.Rodape
+{
+width:100%;
+background:linear-gradient(65deg,#2C97C8,#690471,#420775);    
+padding:10px;
+}
+
+.Rodape-son
+{
+width:100%; 
+max-width:1024px;
+margin:10px auto;
+display:flex;
+align-items:center;
+}
+
+.Rodape-son 
+.img-large 
+{
+width:250px;    
+}
+
+.color-diferent 
+{
+color:#D818E3 !important;
+font-weight:bold;
+font-size:17px;
+font-style:italic;
+}
